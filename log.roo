@@ -1,0 +1,14 @@
+project --topLevelPackage net.degiere.message --projectName roo-message --java 6 --packaging WAR
+persistence setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE 
+entity jpa --class net.degiere.message.domain.Message --testAutomatically 
+field string --fieldName content --notNull
+field date --fieldName modified --type java.util.Date --notNull
+test integration --entity ~.domain.Message
+web mvc setup 
+web mvc all --package net.degiere.message.web
+web mvc install language --code sv
+
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-27 10:03:28
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-27 10:14:36
+selenium test --controller ~.web.MessageController
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-27 10:40:48

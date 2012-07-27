@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_net_degiere_message_domain_Message" items="${messages}" z="vWPt+kmu/M+tHwiAP3ZjEvdS8Ys=">
+        <table:table data="${messages}" id="l_net_degiere_message_domain_Message" path="/messages" z="X86cBRfiPwMGoYR9AfsJTepeLUE=">
+            <table:column id="c_net_degiere_message_domain_Message_content" property="content" z="xHk1inkg2FJJ6EebtuAMnF2YeW8="/>
+            <table:column date="true" dateTimePattern="${message_modified_date_format}" id="c_net_degiere_message_domain_Message_modified" property="modified" z="Pf8miqBfsgg/FgqK/Grt66vcw8o="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_net_degiere_message_domain_Message" object="${message}" path="/messages" z="M89kfXw9AzZTvq+UQsb+e+Mf1/Q=">
+        <field:display field="content" id="s_net_degiere_message_domain_Message_content" object="${message}" z="rvvZEpA/mGQKhxTcesnE2d8/V0U="/>
+        <field:display date="true" dateTimePattern="${message_modified_date_format}" field="modified" id="s_net_degiere_message_domain_Message_modified" object="${message}" z="8aMrBId+t5cK0JKz7gE0VRlBsgI="/>
+    </page:show>
+</div>
